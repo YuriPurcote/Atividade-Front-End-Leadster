@@ -11,12 +11,11 @@ $(document).ready(function() {
     })
     function imagesearch() {
         var porPagina = $("#quantidadePorPagina").val();
-        var numeroPagina = $("#numeroPagina").val();
         $.ajax({
             method:'GET',beforeSend: function (xhr) {
                 xhr.setRequestHeader ("Authorization", api_key);
             },
-            url:"https://api.pexels.com/v1/search?query="+search+"&per_page="+porPagina+"&page="+numeroPagina+"",
+            url:"https://api.pexels.com/v1/search?query="+search+"&per_page="+porPagina+"&page=15",
             success: function (data){
                 data.photos.forEach(photo => {
                     image = `
