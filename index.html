@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BOOSTSRAP -->
     <link rel="stylesheet" href="css/bootstrap.css">
+<!-- STYLE -->
     <link rel="stylesheet" href="css/style.css">
+<!-- ICON GUIA -->
     <link rel="shortcut icon" href="IMGS/LOGO YU -paraguia .png"type="image/x-icon">
+<!-- FONT AWESOME para icones -->
+    <script src="https://kit.fontawesome.com/05976bb27e.js" crossorigin="anonymous"></script>
+<!-- TITULO DA GUIA -->
     <title>Album de Fotos</title>
 </head>
 <body>
@@ -19,22 +25,50 @@
         </div>
     </header>
 <!-- FIM DO TITULO -->
-    <section class="container bg-light py-3 ">
-        <form id="form" class="form-group row d-flex justify-content-center">
+<!--  barra de pesquisa -->
+    <section class="container bg-light py-3 d-flex justify-content-center">
+        <form id="form" class="form-group row ">
             <div class="col-10 ">
-                <input type="text" class=" form-control fs-6 text " id="search" placeholder="Search..." value="flowers">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" class=" form-control fs-6 text " id="search" placeholder="Search..." >
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control fs-6 text-center " id="quantidadePorPagina" value="3" >
+                    </div>
+                    
+                </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 ">
                 <input type="submit" class="btn btn-md btn-primary px-5" value="Pesquisa">
             </div>
         </form>
     </section>
-    <section class="container bg-light d-flex justify-content-center">
-        <div id="images" class="">
-            
+<!-- FIm da barra de pesquisa -->    
+<!-- imagens -->
+    <section class=" container bg-light ">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="row">
+                <div id="images" class="col">
+                        <!-- as imagens sao inseridas pelo app.js criando elemento com a imagem -->            
+                 </div>
+            </div>
+        </div>
+        <!-- Campo numero da pagina -->
+        <div class="col-12 d-flex justify-content-center">
+            <div class="row">
+                <div class="col-6 ">
+                    <button class="btn btn-secondary"><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="bg-dark text-white  ">
+<!-- Fim das imagens -->
+
+    <footer class="bg-dark text-white  d-flex justify-content-center">
         <div class="container py-4">
           <div class="row ">
             <div class="mx-5 col-sm-2 ">
